@@ -4,6 +4,14 @@ import os
 
 def prime(s):
     # your code goes here
+    t = int(s)
+    if(t < 2):
+        return False
+    for i in range(2, t):
+        if(t % i == 0):
+            return False
+    return True
+
 
 def solution(s):
     return prime(s)
